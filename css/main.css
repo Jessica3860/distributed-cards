@@ -1,0 +1,125 @@
+/* ------------- =General -------------- */
+
+html {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  background-color: #f5f2f0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image1 image2"
+    "image3 image4";
+  gap: 1rem;
+  padding-left: 0;
+}
+
+/* ------------- =typography -------------- */
+
+h1 {
+  font-family: "Denk One", sans-serif;
+  color: #623b0c;
+  text-align: left;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+h2 {
+  font-family: "Denk One";
+  color: #623b0c;
+  margin-top: -.2rem;
+  padding-top: .1rem;
+  padding-bottom: .2rem;
+}
+
+p, a {
+  font-family: Georgia;
+}
+
+p {
+  padding-top: .1rem;
+  padding-bottom: .5rem;
+}
+
+/* ----------------- =nav ---------------- */
+
+li,
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ------------- =card layout -------------- */
+
+a {
+  color: #fff;
+  background-color: #623b0c;
+  box-sizing: border-box;
+  padding: .6em .75em;
+  border-radius: .5em;
+  padding-right: 10rem;
+  flex-shrink: 3;
+}
+
+ol li {
+  box-sizing: border-box;
+  padding: 18px;
+  border: 2px solid #623b0c;
+  border-radius: 8px;
+  background-color: #ede3db;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -------------- =img --------------- */
+
+img {
+  width: 100%;
+  padding-bottom: .5rem;
+}
+
+ol li:nth-child(3) h2 {
+  padding-bottom: 0;
+  margin-bottom: .85rem;
+  margin-top: 0;
+}
+
+ol li:nth-child(3) {
+  padding-top: .25rem;
+}
